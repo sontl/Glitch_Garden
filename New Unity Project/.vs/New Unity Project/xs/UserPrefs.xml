@@ -1,14 +1,18 @@
 ﻿<Properties StartupConfiguration="{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Level.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AttackerSpawner.cs">
     <Files>
       <File FileName="Assets/Scripts/Level.cs" Line="25" Column="53" />
+      <File FileName="Assets/Scripts/Attacker.cs" Line="7" Column="18" />
+      <File FileName="Assets/Scripts/AttackerSpawner.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="New Unity Project" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" selected="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="AttackerSpawner.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -17,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b2bbca4f-ca33-467b-a68c-72fd69e8ca56" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="46941c83-c64e-4321-9559-64f168029767" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
