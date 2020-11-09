@@ -13,4 +13,9 @@ public class Projectile : MonoBehaviour
         transform.Translate(Vector2.right * projectileSpeed * Time.deltaTime, Space.World);
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        DealDamage();
+    }
+
 }
