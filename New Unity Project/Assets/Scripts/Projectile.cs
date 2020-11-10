@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-
+    [SerializeField] float damage = 100f;
     [SerializeField] float projectileSpeed = 1f;
     // Start is called before the first frame update
     void Update()
@@ -15,7 +15,9 @@ public class Projectile : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        DealDamage();
+        var objectHealth = collision.GetComponent<Health>();
+        objectHealth.DealDamage(damage);
+        Destroy(gameObject);
     }
 
 }

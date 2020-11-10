@@ -6,7 +6,7 @@
       <File FileName="Assets/Scripts/AttackerSpawner.cs" />
       <File FileName="Assets/Scripts/Shooter.cs" />
       <File FileName="Assets/Scripts/Projectile.cs" Line="18" Column="22" />
-      <File FileName="Assets/Scripts/Health.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/Health.cs" Line="15" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5dbee4bd-3e74-40ab-87c0-93508510e5ed" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5a6351ea-2861-4605-99a0-6f6b37d4594c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
