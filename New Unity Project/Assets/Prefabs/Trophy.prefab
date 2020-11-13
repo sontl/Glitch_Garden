@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3325601527255207202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1523099, y: -0.2161646, z: 9.921875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.06, y: -0.297, z: 0}
+  m_LocalScale: {x: 0.9184708, y: 0.86023533, z: 1}
   m_Children: []
   m_Father: {fileID: 3325601527325183103}
   m_RootOrder: 1
@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3325601527325183103}
   - component: {fileID: 3325601527325183088}
+  - component: {fileID: 1238780554067533358}
   m_Layer: 0
   m_Name: Trophy
   m_TagString: Untagged
@@ -107,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3325601527325183089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1523099, y: 0.21616459, z: -9.921875}
+  m_LocalPosition: {x: -0.307, y: 0.224, z: -9.921875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3325601527599770478}
@@ -134,6 +135,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1238780554067533358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3325601527325183089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1045b06b8a63b4dc48f5baab3dfc0ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starCost: 100
 --- !u!1 &3325601527599770479
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,8 +173,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3325601527599770479}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 0.3, z: 9.921875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.133, y: 0.03, z: 0}
+  m_LocalScale: {x: 0.8602353, y: 0.7850286, z: 1}
   m_Children: []
   m_Father: {fileID: 3325601527325183103}
   m_RootOrder: 0

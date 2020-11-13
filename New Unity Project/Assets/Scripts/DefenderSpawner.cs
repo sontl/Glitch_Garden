@@ -4,25 +4,38 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private Defender selectedDefenderPrefab;
 
     public void OnMouseDown()
     {
-        var defenders = FindObjectsOfType<DefenderSpawner>();
-        foreach(DefenderSpawner defender in defenders)
+        SpawnDefender(GetSquareClicked());
+    }
+
+    public void SetSelectedDefenderPrefab(Defender prefab)
+    {
+        this.selectedDefenderPrefab = prefab;
+    }
+
+    private void SpawnDefender(Vector2 worldPos)
+    {
+        if (selectedDefenderPrefab)
         {
-            defender.GetComponent<SpriteRenderer>().color = Color.black;
+            Defender defender = Instantiate(selectedDefenderPrefab, worldPos, Quaternion.identity) as Defender;
         }
-        GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
+    private Vector2 GetSquareClicked()
+    {
+        Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos);
+        return SnapToGrid(worldPos);
+    }
+
+    private Vector2 SnapToGrid(Vector2 worldPos)
+    {
+        int newX = Mathf.RoundToInt(worldPos.x);
+        int newY = Mathf.RoundToInt(worldPos.y);
+        Vector2 newWorldPos = new Vector2(newX, newY);
+        return newWorldPos;
     }
 }
