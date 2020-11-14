@@ -8,7 +8,7 @@ public class DefenderSpawner : MonoBehaviour
 
     public void OnMouseDown()
     {
-        SpawnDefender(GetSquareClicked());
+        AttemptToSpawnDefender();
     }
 
     public void SetSelectedDefenderPrefab(Defender prefab)
@@ -16,11 +16,21 @@ public class DefenderSpawner : MonoBehaviour
         this.selectedDefenderPrefab = prefab;
     }
 
+    private void AttemptToSpawnDefender()
+    {
+        
+        if (selectedDefenderPrefab && selectedDefenderPrefab.haveEnoughStar())
+        {
+            SpawnDefender(GetSquareClicked());
+        } 
+    }
+
     private void SpawnDefender(Vector2 worldPos)
     {
         if (selectedDefenderPrefab)
         {
             Defender defender = Instantiate(selectedDefenderPrefab, worldPos, Quaternion.identity) as Defender;
+            defender.SpendStars();
         }
     }
 
