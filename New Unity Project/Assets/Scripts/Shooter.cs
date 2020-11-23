@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    [SerializeField] GameObject zuchiniPrefab, gun;
+    [SerializeField] GameObject projectilePrefab, gun;
     AttackerSpawner myLaneSpawner;
     Animator animator;
 
@@ -27,7 +27,7 @@ public class Shooter : MonoBehaviour
 
     public void Fire()
     {
-        Instantiate(zuchiniPrefab, gun.transform.position, transform.rotation);
+        Instantiate(projectilePrefab, gun.transform.position, transform.rotation);
     }
 
     private void SetLaneSpawner()

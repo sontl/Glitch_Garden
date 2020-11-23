@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        transform.Rotate(new Vector3(0f, 0f, 1f));
+        //transform.Rotate(new Vector3(0f, 0f, 1f)); // this will be replaced by animator
         transform.Translate(Vector2.right * projectileSpeed * Time.deltaTime, Space.World);
     }
 
